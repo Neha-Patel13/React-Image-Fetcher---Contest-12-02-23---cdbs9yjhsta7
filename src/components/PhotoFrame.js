@@ -3,9 +3,9 @@ import "../styles/App.css"
 
 export const PhotoFrame = ({url,title}) => {
    return(
-      <div className='photofram'>
-      <div>{title}</div>
-<img src ={url}/>
-   </div>
-)
+      <div className='photoframe'>
+           <div>{title}</div>
+         <img src={url} />
+      </div>
+   )
 }
