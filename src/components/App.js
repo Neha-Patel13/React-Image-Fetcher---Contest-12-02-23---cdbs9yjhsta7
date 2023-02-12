@@ -7,7 +7,7 @@ const fetchPosts = asyns (id) => {
   return fetch(url);
 }
 const App = () =>{
-  const[data, setdata]=useState([[])
+  const[data, setdata]=useState([])
     const[id, setId]=useState(null)
  const handleChange=(e)=>{
     setId(e.target.value)
@@ -19,10 +19,10 @@ const App = () =>{
       setData(jsonData);
     })
   }
-  useEffect(() =>
+  useEffect(() =>{
             loadData();
             },[]);
-useEffect(() =>
+useEffect(() =>{
           setData(null)
             loadData();
             },[id]);
